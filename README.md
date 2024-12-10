@@ -68,24 +68,49 @@ Developed by:KABELAN G K
 RegisterNumber:24900985
 
 ```
+**Half Adder**
 ```
-module exp3(a,b,cy,sm,df,bo);
-input a,b;
-output sm,cy,df,bo;
-xor(sm,a,b);
-and(cy,a,b);
-xor(df,a,b);
-and(boi,~a,b);
+module half_adder(sum, carry, a, b);
+  output sum;
+  output carry;
+  input a;
+  input b;
+  assign sum = a ^ b;
+  assign carry = a & b;
 endmodule
+
+```
+**Half Subtractor**
+```
+module half_subtractor(diff, borrow, a, b);
+  output diff;
+  output borrow;
+  input a;
+  input b;
+  assign diff = a ^ b;
+  assign borrow = ~a & b;
+endmodule
+
 ```
 
 **RTL Schematic**
-![image](https://github.com/user-attachments/assets/6ea0c861-3cf2-4268-b701-6cb8a48dfff8)
+**Half Adder**
+![image](https://github.com/user-attachments/assets/0163d5e3-fda4-46e5-b48d-c4f5023a0b6a)
+
+**Half Subtractor**
+![image](https://github.com/user-attachments/assets/69257a8c-0afa-44a0-a4d3-3973d8438069)
+
+
 
 
 **Output/TIMING Waveform**
+**Half Adder**
+![image](https://github.com/user-attachments/assets/0597ca12-88b3-4231-878a-e3a4da2af7ff)
 
-![image](https://github.com/user-attachments/assets/f562637e-124e-47c2-8823-823d99b74dde)
+**Half Subtractor**
+![image](https://github.com/user-attachments/assets/5d6b55fe-2e1d-43a7-a3a5-51dd04b9b713)
+
+
 
 
 **Result:**
