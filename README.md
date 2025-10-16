@@ -64,8 +64,8 @@ HALF SUBTRACTOR
 
 ```
 Program to design a half adder and half subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by:KABELAN G K 
-RegisterNumber:24900985
+Developed by:DHINESH KUMAR G
+RegisterNumber:25011824
 
 ```
 **Half Adder**
